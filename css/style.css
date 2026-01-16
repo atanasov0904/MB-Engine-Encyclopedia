@@ -1,0 +1,202 @@
+:root {
+  --primary-color: #0091ff;
+  --dark-bg: #1a1a1a;
+  --light-bg: #f4f4f4;
+  --text-main: #333;
+  --white: #ffffff;
+  --amg-red: #d10000;
+  --diesel-blue: #06b300;
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* header & navigation */
+header {
+  background: var(--dark-bg);
+  color: var(--white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+.nav-menu li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: var(--primary-color);
+}
+
+/* ---- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Mercedes-Benz-Internal-Branding_header.jpg.webp")
+      center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* info cards */
+.engines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.engine-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.engine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.engine-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.engine-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+/* functionality */
+.engine-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.diesel {
+  background: #e3f2fd;
+  color: var(--diesel-blue);
+}
+.amg {
+  background: #ffebee;
+  color: var(--amg-red);
+}
+.petrol {
+  background: #eee;
+  color: #444;
+}
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+.btn-secondary {
+  background: var(--dark-bg);
+  color: white;
+}
+
+/* selections and comparison */
+.engine-select {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 5px;
+}
+.specs-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+.specs-table th,
+.specs-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.specs-table th:first-child,
+.specs-table td:first-child {
+  text-align: left;
+  background: var(--light-bg);
+}
+
+/* ----- */
+footer {
+  background: var(--dark-bg);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--dark-bg);
+    padding: 1rem;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+}
