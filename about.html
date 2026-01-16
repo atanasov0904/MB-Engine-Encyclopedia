@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За проекта | MB Engine Encyclopedia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('images/Mercedes-Benz-Internal-Branding_header.jpg.webp') center/cover;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .content-block {
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .content-block h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .stat-item {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid var(--dark-bg);
+        }
+        .personal-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 30px;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .personal-card img {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .personal-text {
+            flex: 2;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>MB Engine Encyclopedia</h1></div>
+            <nav>
+                <button class="menu-toggle" aria-label="Отвори меню">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="engine-details.html">Детайли</a></li>
+                    <li><a href="comparison.html">Сравнение</a></li>
+                    <li><a href="about.html" class="active">За проекта</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Мисията зад MB Engine Encyclopedia</h1>
+            <p>Паметник на инженерната мисъл и страстта към високите технологии</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="content-block">
+            <h2>История на един фен</h2>
+            <div class="personal-card">
+                <div class="personal-text">
+                    <p>
+                        Моята история с автомобилите не започна от брошури или реклами, а от звука на работещ двигател с вътрешно горене. Още от малък бях запленен от магията на ДВГ – как метал, гориво и искра създават живот и движение. За мен двигателят не е просто компонент, а сърцето на автомобила.
+                    </p>
+                    <p>
+                        През годините съм имал възможност да се докосна до различни марки, но Mercedes-Benz винаги е бил моят фар. Това е марка, която не прави компромиси. До ден днешен оставам верен на трилъчевата звезда, защото тя олицетворява "Das Beste oder nichts" (Най-доброто или нищо).
+                    </p>
+                </div>
+                <img src="images/aa29a4_5e89f530863b4a2c8d407448c1d3b60f~mv2.jpg.avif" alt="Моят Mercedes OM642">
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h2>Защо OM642?</h2>
+            <p>
+                В момента моето ежедневие е свързано с легендарния <strong>OM642</strong>. Този 3.0-литров V6 дизел е истинско инженерно бижу. Въпреки че днешният свят се насочва към електрификация, балансът, мощността и надеждността на този агрегат ме карат да се усмихвам всеки път, когато подам газ. Той е доказателство, че дизеловата технология може да бъде едновременно рафинирана и изключително здрава. Този проект е вдъхновен именно от опита ми с този двигател.
+            </p>
+        </section>
+
+        <section class="content-block">
+            <h2>Концепция и реализация</h2>
+            <p>
+                MB Engine Encyclopedia е създаден с цел да бъде изчерпателен ресурс за всички ентусиасти и професионалисти, които споделят моята страст към двигателите на Mercedes-Benz. Този уебсайт комбинира технически спецификации, исторически данни и визуални материали, за да предостави пълна картина на инженерното съвършенство зад всеки двигател.
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>Технологии</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Дизайн</h3>
+                    <p>Responsive & Modern UX</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Фокус</h3>
+                    <p>Mercedes-Benz Heritage</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MB Engine Encyclopedia. Създадено с бензин в кръвта.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

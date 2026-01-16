@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Енциклопедия за легендарните двигатели на Mercedes-Benz. Технически характеристики и история.">
+    <title>MB Engine Encyclopedia | Начало</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MB Engine Encyclopedia</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Отвори меню">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Начало</a></li>
+                    <li><a href="engine-details.html">Детайли</a></li>
+                    <li><a href="comparison.html">Сравнение</a></li>
+                    <li><a href="about.html">За проекта</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Легендарните двигатели на Mercedes-Benz</h2>
+                <p>Открийте инженерното съвършенство зад трилъчевата звезда</p>
+                <a href="#engines" class="btn-primary">Разгледай двигателите</a>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="container">
+                <h2>Намери своя двигател</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Всички</button>
+                    <button class="filter-btn" data-filter="petrol">Бензин</button>
+                    <button class="filter-btn" data-filter="diesel">Дизел</button>
+                    <button class="filter-btn" data-filter="amg">AMG</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="engines" class="engines-section">
+            <div class="container">
+                <div class="engines-grid">
+                    <article class="engine-card" data-category="diesel">
+                        <div class="engine-image">
+                            <img src="images/aa29a4_5e89f530863b4a2c8d407448c1d3b60f~mv2.jpg.avif" alt="Mercedes OM642">
+                        </div>
+                        <div class="engine-content">
+                            <h3>OM642 V6</h3>
+                            <span class="engine-badge diesel">Diesel</span>
+                            <p>3.0L V6 турбо-дизел, известен със своята икономичност и въртящ момент.</p>
+                            <a href="engine-details.html#om642" class="btn-secondary">Научи повече</a>
+                        </div>
+                    </article>
+
+                    <article class="engine-card" data-category="petrol amg">
+                        <div class="engine-image">
+                            <img src="images/8WveNC5l.jpg" alt="Mercedes M113K">
+                        </div>
+                        <div class="engine-content">
+                            <h3>M113K V8</h3>
+                            <span class="engine-badge amg">AMG</span>
+                            <p>Легендарен 5.4L V8 с компресор, символ на мощност и здравина.</p>
+                            <a href="engine-details.html#m113k" class="btn-secondary">Научи повече</a>
+                        </div>
+                    </article>
+
+                    <article class="engine-card" data-category="petrol">
+                        <div class="engine-image">
+                            <img src="images/Mercedes-Benz,_Techno-Classica_2018,_Essen_(IMG_9644).jpg" alt="Mercedes M104">
+                        </div>
+                        <div class="engine-content">
+                            <h3>M104 Inline-6</h3>
+                            <span class="engine-badge petrol">Petrol</span>
+                            <p>Класически редови шестак, прочут с плавната си работа и дълголетие.</p>
+                            <a href="engine-details.html#m104" class="btn-secondary">Научи повече</a>
+                        </div>
+                    </article>
+
+                    <article class="engine-card" data-category="diesel">
+                        <div class="engine-image">
+                            <img src="images/IMG_0077__86684.jpg" alt="Mercedes OM606">
+                        </div>
+                        <div class="engine-content">
+                            <h3>OM606 Inline-6</h3>
+                            <span class="engine-badge diesel">Diesel</span>
+                            <p>Прочутият "Million Mile Motor", неразрушим дизелов агрегат.</p>
+                            <a href="engine-details.html#om606" class="btn-secondary">Научи повече</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MB Engine Encyclopedia. Курсова работа по Уеб Дизайн.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

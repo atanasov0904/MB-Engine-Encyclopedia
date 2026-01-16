@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение на двигатели | MB Engine Encyclopedia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>MB Engine Encyclopedia</h1></div>
+            <nav>
+                <button class="menu-toggle" aria-label="Отвори меню">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="engine-details.html">Детайли</a></li>
+                    <li><a href="comparison.html" class="active">Сравнение</a></li>
+                    <li><a href="about.html">За проекта</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section style="padding: 2rem 0;">
+            <h1>Сравнение на спецификации</h1>
+            <p>Изберете два двигателя за директно сравнение:</p>
+            
+            <div class="selection-container" style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; background: #eee; padding: 20px; border-radius: 10px;">
+                <div class="select-group">
+                    <label for="engine1" style="display:block; font-weight:bold;">Двигател 1:</label>
+                    <select id="engine1" class="engine-select" style="padding:8px; width:200px;"></select>
+                </div>
+                <div class="select-group">
+                    <label for="engine2" style="display:block; font-weight:bold;">Двигател 2:</label>
+                    <select id="engine2" class="engine-select" style="padding:8px; width:200px;"></select>
+                </div>
+            </div>
+
+            
+            <div class="specs-table">
+                <table id="comparison-table" style="width:100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Характеристика</th>
+                            <th id="name1" style="width: 40%;">Двигател 1</th>
+                            <th id="name2" style="width: 40%;">Двигател 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Визия</strong></td>
+                            <td><img id="img1" src="" alt="" style="width:100%; max-width:200px; border-radius:5px; height:auto;"></td>
+                            <td><img id="img2" src="" alt="" style="width:100%; max-width:200px; border-radius:5px; height:auto;"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Години</strong></td>
+                            <td id="years1">-</td>
+                            <td id="years2">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Мощност</strong></td>
+                            <td id="power1">-</td>
+                            <td id="power2">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Въртящ момент</strong></td>
+                            <td id="torque1">-</td>
+                            <td id="torque2">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Предимства</strong></td>
+                            <td id="strengths1">-</td>
+                            <td id="strengths2">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container"><p>&copy; 2024 MB Engine Encyclopedia</p></div>
+    </footer>
+
+    <script src="js/comparison.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
