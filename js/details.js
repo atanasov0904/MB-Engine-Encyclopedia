@@ -51,10 +51,9 @@ function renderDetails() {
     const container = document.getElementById('engine-detail-content');
     if(!engine || !container) return;
 
-    // breadcrumb title
     document.getElementById('breadcrumb-engine').textContent = engine.name;
 
-    // engine details
+    // details
     container.innerHTML = `
         <article class="engine-detail">
             <h1>${engine.fullName}</h1>
@@ -74,7 +73,6 @@ function renderDetails() {
             </div>
         </article>`;
 
-    // related engines
     renderRelatedEngines(id);
 }
 
@@ -85,7 +83,6 @@ function renderRelatedEngines(currentId) {
     // clear old
     grid.innerHTML = '';
 
-    // filter others
     const related = Object.values(enginesData).filter(e => e.id !== currentId);
 
     related.forEach(engine => {
@@ -105,7 +102,6 @@ function renderRelatedEngines(currentId) {
     });
 }
 
-// details on load
 window.addEventListener('load', renderDetails);
 
 // details on hash change

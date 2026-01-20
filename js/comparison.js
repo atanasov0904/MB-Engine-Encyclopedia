@@ -68,10 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    //add event listeners
     select1.addEventListener('change', updateComparison);
     select2.addEventListener('change', updateComparison);
 
-    //initial update
     updateComparison();
 });
